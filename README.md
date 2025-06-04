@@ -1,6 +1,12 @@
 # Nanoleaf Essentials Home Assistant Integration
 
-A custom integration for Home Assistant specifically developed for Nanoleaf Essentials devices. This integration solves known issues with the standard Nanoleaf integration and provides a more stable connection to Essentials devices.
+[![HACS Submission](https://img.shields.io/badge/HACS-Submission%20Pending-orange)](https://github.com/hacs/default/pulls)
+[![GitHub release](https://img.shields.io/github/release/mcaonline/nanoleaf-essentials-hass.svg)](https://github.com/mcaonline/nanoleaf-essentials-hass/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2023.1%2B-blue.svg)](https://www.home-assistant.io)
+[![Issues](https://img.shields.io/github/issues/mcaonline/nanoleaf-essentials-hass)](https://github.com/mcaonline/nanoleaf-essentials-hass/issues)
+
+A custom integration for Home Assistant specifically developed for Nanoleaf Essentials devices. This integration solves known issues with the standard Nanoleaf integration (including POST/GET API communication problems documented in [Home Assistant Core Issue #132084](https://github.com/home-assistant/core/issues/132084)) and provides a more stable connection to Essentials devices.
 
 ## 🌟 Features
 
@@ -10,7 +16,9 @@ A custom integration for Home Assistant specifically developed for Nanoleaf Esse
 - ✅ Effects support
 - ✅ Automatic device discovery
 - ✅ German and English translations
-- ✅ Robust API communication
+- ✅ Robust API communication with HTML response handling
+- ✅ Compatible with all Home Assistant versions
+- ✅ Solves POST/GET issues with Essentials devices
 - ✅ Simple setup process
 
 ## 📋 Requirements
@@ -21,7 +29,20 @@ A custom integration for Home Assistant specifically developed for Nanoleaf Esse
 
 ## 🚀 Installation
 
-### Method 1: Manual Installation
+### Method 1: HACS (Recommended - Coming Soon)
+
+**Status:** ⏳ HACS submission pending approval
+
+The integration has been submitted to HACS and is awaiting approval. Once approved, you'll be able to install it directly through HACS:
+
+1. Open HACS in Home Assistant
+2. Search for "Nanoleaf Essentials"
+3. Install the integration
+4. Restart Home Assistant
+
+**Track submission progress:** [HACS Default Repository](https://github.com/hacs/default/pulls)
+
+### Method 2: Manual Installation
 
 #### 1. Create Directory Structure
 
@@ -67,11 +88,11 @@ Restart Home Assistant:
 - **UI**: `Settings` → `System` → `Restart`
 - **CLI**: `ha core restart`
 
-### Method 2: Git Installation
+### Method 3: Git Installation
 
 ```bash
 cd /config/custom_components
-git clone https://github.com/yourusername/nanoleaf-essentials.git nanoleaf_essentials
+git clone https://github.com/mcaonline/nanoleaf-essentials-hass.git nanoleaf_essentials
 ```
 
 ## ⚙️ Configuration
@@ -197,11 +218,27 @@ curl -X PUT http://[IP]:16021/api/v1/[API_KEY]/state \
   -d '{"on":{"value":true}}'
 ```
 
+### Known Issues & Solutions
+
+#### JSON Parsing Errors
+The integration handles cases where Nanoleaf devices return HTML responses instead of pure JSON. This commonly occurs when:
+- Device is not in API pairing mode
+- Network connectivity issues
+- Device firmware differences
+
+**Solution**: The integration automatically extracts JSON from HTML responses using the same approach as the original MicroPython implementation.
+
+#### Import Errors in Older HA Versions
+If you see `ImportError: cannot import name 'color_rgb_to_hsv'`, this is due to changes in Home Assistant's color utility functions.
+
+**Solution**: The integration includes its own RGB↔HSV conversion functions for compatibility across all Home Assistant versions.
+
 ## 📊 Supported Devices
 
 This integration has been tested with:
 - ✅ Nanoleaf Essentials Lightstrip HD (NL72K1) via IP Connectivity (WLAN)
-
+- ✅ Nanoleaf Essentials A19 Bulb
+- ✅ Nanoleaf Essentials Lightstrip
 
 *Other Essentials devices should also work.*
 
@@ -217,6 +254,9 @@ This integration has been tested with:
 cd /config/custom_components/nanoleaf_essentials
 git pull origin main
 ```
+
+### HACS Updates (After Approval)
+Updates will be handled automatically through HACS once the integration is approved.
 
 ## 🐛 Report Issues
 
@@ -247,7 +287,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - Based on the official Nanoleaf integration
 - Inspired by community feedback on Essentials issues
-- Thanks to all beta testers
+- Solves POST/GET API problems referenced in [HA Core Issue #132084](https://github.com/home-assistant/core/issues/132084)
+- Uses proven MicroPython-based API communication approach
+- Thanks to all beta testers and the Home Assistant community
 
 ## 📚 Additional Resources
 
