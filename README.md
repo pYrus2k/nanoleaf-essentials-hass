@@ -127,7 +127,7 @@ automation:
     action:
       service: light.turn_on
       target:
-        entity_id: light.nanoleaf_essentials_10_80_23_56
+        entity_id: light.nanoleaf_essentials_192_168_0_80
       data:
         brightness: 180
         rgb_color: [255, 200, 100]
@@ -143,7 +143,7 @@ automation:
     action:
       service: light.turn_on
       target:
-        entity_id: light.nanoleaf_essentials_10_80_23_56
+        entity_id: light.nanoleaf_essentials_192_168_0_80
       data:
         effect: "Energize"
 ```
