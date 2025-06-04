@@ -1,12 +1,12 @@
 {
-  "domain": "nanoleaf_essentials",
-  "name": "Nanoleaf Essentials",
+  "domain": "nanoleaf_essentials_hass",
+  "name": "Nanoleaf Essentials HASS",
   "documentation": "https://github.com/mcaonline/nanoleaf-essentials-hass",
   "issue_tracker": "https://github.com/mcaonline/nanoleaf-essentials-hass/issues",
   "dependencies": [],
   "codeowners": ["@mcaonline"],
   "requirements": ["aiohttp>=3.8.0"],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "iot_class": "local_polling",
   "config_flow": true,
   "integration_type": "device"
