@@ -1,6 +1,6 @@
 {
-  "domain": "nanoleaf_essentials_hass",
-  "name": "Nanoleaf Essentials HASS",
+  "domain": "nanoleaf_essentials",
+  "name": "Nanoleaf Essentials",
   "documentation": "https://github.com/mcaonline/nanoleaf-essentials-hass",
   "issue_tracker": "https://github.com/mcaonline/nanoleaf-essentials-hass/issues",
   "dependencies": [],
