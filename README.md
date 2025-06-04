@@ -29,11 +29,27 @@ A custom integration for Home Assistant specifically developed for Nanoleaf Esse
 
 ## 🚀 Installation
 
-### Method 1: HACS (Recommended - Coming Soon)
+### Method 1: HACS Custom Repository (Recommended)
+
+While waiting for official HACS approval, you can install this integration as a custom repository:
+
+1. **Open HACS** in your Home Assistant instance
+2. Click the **3 dots** in the top right corner
+3. Select **"Custom repositories"**
+4. Add the repository URL: `https://github.com/mcaonline/nanoleaf-essentials-hass`
+5. Select **"Integration"** as the category
+6. Click **"Add"**
+7. Search for **"Nanoleaf Essentials"** in HACS
+8. Click **"Install"**
+9. Restart Home Assistant
+
+> **Note:** Once officially approved, this integration will be available directly in HACS without adding a custom repository.
+
+### Method 2: HACS Official (Coming Soon)
 
 **Status:** ⏳ HACS submission pending approval
 
-The integration has been submitted to HACS and is awaiting approval. Once approved, you'll be able to install it directly through HACS:
+Once approved, you'll be able to install it directly through HACS:
 
 1. Open HACS in Home Assistant
 2. Search for "Nanoleaf Essentials"
@@ -42,7 +58,7 @@ The integration has been submitted to HACS and is awaiting approval. Once approv
 
 **Track submission progress:** [HACS Default Repository](https://github.com/hacs/default/pulls)
 
-### Method 2: Manual Installation
+### Method 3: Manual Installation
 
 #### 1. Create Directory Structure
 
@@ -88,7 +104,7 @@ Restart Home Assistant:
 - **UI**: `Settings` → `System` → `Restart`
 - **CLI**: `ha core restart`
 
-### Method 3: Git Installation
+### Method 4: Git Installation
 
 ```bash
 cd /config/custom_components
@@ -237,12 +253,13 @@ If you see `ImportError: cannot import name 'color_rgb_to_hsv'`, this is due to 
 
 This integration has been tested with:
 - ✅ Nanoleaf Essentials Lightstrip HD (NL72K1) via IP Connectivity (WLAN)
-- ✅ Nanoleaf Essentials A19 Bulb
-- ✅ Nanoleaf Essentials Lightstrip
-
-*Other Essentials devices should also work.*
+- ✅ Maybe other Nanoleaf Essentials with IP Connectivity and API Key creation ability (cia APP)
+*Other IP Essentials devices should also work.*
 
 ## 🔄 Updates
+
+### HACS Updates (Recommended)
+If installed via HACS, updates will be available in the HACS interface when new versions are released.
 
 ### Manual Updates
 1. Download the latest files
@@ -254,9 +271,6 @@ This integration has been tested with:
 cd /config/custom_components/nanoleaf_essentials
 git pull origin main
 ```
-
-### HACS Updates (After Approval)
-Updates will be handled automatically through HACS once the integration is approved.
 
 ## 🐛 Report Issues
 
