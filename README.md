@@ -40,7 +40,7 @@ A custom integration for Home Assistant specifically developed for Nanoleaf Esse
 6. Restart Home Assistant
 
 
-### Method 2: HACS Custom Repository (Recommended)
+### Method 2: HACS Custom Repository
 
 While waiting for official HACS approval, you can install this integration as a custom repository:
 
