@@ -45,9 +45,9 @@ While waiting for official HACS approval, you can install this integration as a 
 
 > **Note:** Once officially approved, this integration will be available directly in HACS without adding a custom repository.
 
-### Method 2: HACS Official (Coming Soon)
+### Method 2: HACS Official (Not coming - got denied without note)
 
-**Status:** ⏳ HACS submission pending approval
+**Status:** ⏳ HACS submission approval - denied! Please try by yourself copy code to your repo and resubmit
 
 Once approved, you'll be able to install it directly through HACS:
 
@@ -91,7 +91,7 @@ mkdir -p custom_components/nanoleaf_essentials/translations
 1. Install the "File Editor" add-on from the Add-on Store
 2. Open File Editor
 3. Create the folder structure
-4. Copy the content of each file individually
+4. Copy the each file (or content) individually
 
 **Option C: Samba/CIFS Share**
 1. Connect via Samba to your Home Assistant
