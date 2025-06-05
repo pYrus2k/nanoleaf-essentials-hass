@@ -47,8 +47,8 @@ While waiting for official HACS approval, you can install this integration as a 
 
 ### Method 2: HACS Official (Not coming - got denied without note)
 
-**Status:** ⏳ HACS submission approval got denied!
-Please try by yourself - feel free to copy the code to your repo and resubmit to HACS.
+**Status:** 🚫 HACS submission approval got denied!  
+Please try by yourself - feel free to copy the code to your repo and resubmit to HACS.  
 Please do not contact me to this contact the HACS owners instead asking them why they denied it - i have no clue.
 
 Once approved, you'll be able to install it directly through HACS:
