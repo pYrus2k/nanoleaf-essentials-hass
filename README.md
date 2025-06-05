@@ -252,6 +252,7 @@ If you see `ImportError: cannot import name 'color_rgb_to_hsv'`, this is due to 
 
 This integration has been tested with:
 - ✅ Nanoleaf Essentials Lightstrip HD (NL72K1) via IP Connectivity (WLAN)
+- ✅ Nanoleaf Essentials Outdoor String Lights via IP Connectivity (WLAN)
 - ✅ Maybe other Nanoleaf Essentials with IP Connectivity and API Key creation ability (cia APP)
 *Other IP Essentials devices should also work.*
 
