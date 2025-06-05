@@ -49,7 +49,14 @@ While waiting for official HACS approval, you can install this integration as a 
 
 **Status:** 🚫 HACS submission approval got denied!  
 Please try by yourself - feel free to copy the code to your repo and resubmit to HACS.  
-Please do not contact me to this contact the HACS owners instead asking them why they denied it - i have no clue.
+Please do not contact me to this contact the HACS owners instead asking them why they denied it - i have no clue - received only "closed" not a single word.
+I'm completely new to the open source community and honestly have no idea what I might have done wrong. But without any kind of message or explanation, there's no way for me to improve or learn. That’s not a process I feel I can keep up with and i don't feel welcome - i'm out.
+
+The aim was to make the code public so that everyone could benefit from it – aim reached.
+The code is available – please feel free to copy it manually into your Home Assistant setup.
+You're also welcome to use it in your own repository and even submit it to HACS yourself. Hopefully, you'll receive at least some feedback – even just a word – about what might be wrong.
+
+(ref: https://github.com/hacs/default/pull/3524)
 
 Once approved, you'll be able to install it directly through HACS:
 
