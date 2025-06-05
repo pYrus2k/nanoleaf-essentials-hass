@@ -1,6 +1,6 @@
 # Nanoleaf Essentials Home Assistant Integration
 
-[![HACS Submission](https://img.shields.io/badge/HACS-Submission%20Denied-red)](https://github.com/hacs/default/pulls)
+[![HACS Submission](https://img.shields.io/badge/HACS-Submission%20Denied without note-red)](https://github.com/hacs/default/pulls)
 [![GitHub release](https://img.shields.io/github/release/mcaonline/nanoleaf-essentials-hass.svg)](https://github.com/mcaonline/nanoleaf-essentials-hass/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2023.1%2B-blue.svg)](https://www.home-assistant.io)
@@ -47,7 +47,9 @@ While waiting for official HACS approval, you can install this integration as a 
 
 ### Method 2: HACS Official (Not coming - got denied without note)
 
-**Status:** ⏳ HACS submission approval - denied! Please try by yourself copy code to your repo and resubmit
+**Status:** ⏳ HACS submission approval got denied! 
+Please try by yourself - feel free to copy the code to your repo and resubmit to HACS
+Please do not contact me to this contact the HACS owners instead asking them why they denied it - i have no clue.
 
 Once approved, you'll be able to install it directly through HACS:
 
