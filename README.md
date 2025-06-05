@@ -54,7 +54,7 @@ I'm completely new to the open source community and honestly have no idea what I
 
 The aim was to make the code public so that everyone could benefit from it – aim reached.
 The code is available – please feel free to copy it manually into your Home Assistant setup.
-You're also welcome to use it in your own repository and even submit it to HACS yourself. Hopefully, you'll receive at least some feedback – even just a word – about what might be wrong.
+You're also welcome to use it in your own repository and even submit it to HACS yourself. Hopefully, you'll be successfull and / or receive at least some feedback – even just a word – about what might be wrong.
 
 (ref: https://github.com/hacs/default/pull/3524)
 
