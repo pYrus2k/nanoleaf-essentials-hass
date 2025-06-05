@@ -1,6 +1,6 @@
 # Nanoleaf Essentials Home Assistant Integration
 
-[![HACS Submission](https://img.shields.io/badge/HACS-Submission%20Denied-red)](https://github.com/hacs/default/pulls)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 [![GitHub release](https://img.shields.io/github/release/mcaonline/nanoleaf-essentials-hass.svg)](https://github.com/mcaonline/nanoleaf-essentials-hass/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2023.1%2B-blue.svg)](https://www.home-assistant.io)
@@ -29,7 +29,18 @@ A custom integration for Home Assistant specifically developed for Nanoleaf Esse
 
 ## 🚀 Installation
 
-### Method 1: HACS Custom Repository (Recommended)
+
+### Method 1: HACS (Recommended)
+
+1. Open HACS in Home Assistant
+2. Click on "Integrations"
+3. Click the "+" button in the bottom right
+4. Search for "Nanoleaf Essentials"
+5. Click "Install"
+6. Restart Home Assistant
+
+
+### Method 2: HACS Custom Repository (Recommended)
 
 While waiting for official HACS approval, you can install this integration as a custom repository:
 
@@ -45,30 +56,9 @@ While waiting for official HACS approval, you can install this integration as a 
 
 > **Note:** Once officially approved, this integration will be available directly in HACS without adding a custom repository.
 
-### Method 2: HACS Official (Not coming - got denied without note)
 
-**Status:** 🚫 HACS submission approval got denied!  
-Please try by yourself - feel free to copy the code to your repo and resubmit to HACS.  
-Please do not contact me to this contact the HACS owners instead asking them why they denied it - i have no clue - received only "closed" not a single word.
-I'm completely new to the open source community and honestly have no idea what I might have done wrong. But without any kind of message or explanation, there's no way for me to improve or learn. That’s not a process I feel I can keep up with and i don't feel welcome - i'm out.
-
-The aim was to make the code public so that everyone could benefit from it – aim reached.
-The code is available – please feel free to copy it manually into your Home Assistant setup.
-You're also welcome to use it in your own repository and even submit it to HACS yourself. Hopefully, you'll be successfull and / or receive at least some feedback – even just a word – about what might be wrong.
-
-(ref: https://github.com/hacs/default/pull/3524)
-
-Once approved, you'll be able to install it directly through HACS:
-
-1. Open HACS in Home Assistant
-2. Search for "Nanoleaf Essentials"
-3. Install the integration
-4. Restart Home Assistant
-
-**Track submission progress:** [HACS Default Repository](https://github.com/hacs/default/pulls)
 
 ### Method 3: Manual Installation
-
 #### 1. Create Directory Structure
 
 Create the following folder structure in your Home Assistant `config` directory:
