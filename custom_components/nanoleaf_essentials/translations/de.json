@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Nanoleaf Essentials test",
+        "title": "Nanoleaf Essentials test1234",
         "description": "Geben Sie die IP-Adresse Ihres Nanoleaf Essentials Geräts ein.",
         "data": {
           "host": "IP-Adresse"
