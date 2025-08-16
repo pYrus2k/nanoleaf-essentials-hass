@@ -1,15 +1,13 @@
 {
-  "domain": "nanoleaf_essentials",
-  "name": "Nanoleaf Essentials",
-  "codeowners": ["@mcaonline"],
-  "config_flow": true,
+  "domain": "nanoleaf_secretlab",
+  "name": "Nanoleaf Secretlab",
+  "documentation": "https://example.com",
+  "issue_tracker": "https://example.com/issues",
   "dependencies": [],
-  "documentation": "https://github.com/pYrus2k/nanoleaf-essentials-hass",
-  "homekit": {},
+  "codeowners": ["@dein_github_name"],
+  "requirements": ["nanoleafapi>=2.0.0"],
+  "version": "1.0.0",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/pYrus2k/nanoleaf-essentials-hass/issues",
-  "requirements": [],
-  "ssdp": [],
-  "version": "1.0.3",
-  "zeroconf": []
+  "config_flow": true,
+  "integration_type": "device"
 }
